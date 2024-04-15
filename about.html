@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Custom Styles */
+    /* Add your custom CSS styles here */
+
+    /* Navigation */
+    .navbar-brand {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .navbar-nav .nav-link {
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #007bff;
+    }
+
+    /* About Section */
+    #about {
+      padding: 100px 0;
+      background-color: #f8f9fa;
+    }
+
+    #about h2 {
+      color: #007bff;
+    }
+
+    #about p {
+      color: #555;
+    }
+
+    /* Team Section */
+    #team {
+      padding: 100px 0;
+      background-color: #e9ecef;
+    }
+
+    #team h2 {
+      color: #007bff;
+    }
+
+    .card {
+      border: none;
+      transition: transform 0.3s;
+      background-color: #fff;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-title {
+      color: #333;
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-text {
+      color: #666;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #343a40;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    footer p {
+      margin-bottom: 0;
+    }
+
+    /* Media Queries */
+    @media (max-width: 768px) {
+      .navbar-brand {
+        font-size: 1.5rem;
+      }
+
+      .navbar-nav .nav-link {
+        font-size: 1rem;
+      }
+
+      #about, #team {
+        padding: 50px 0;
+      }
+
+      #about img {
+        margin-top: 20px;
+      }
+    }
+    
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Trend Blog</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h2 class="display-4">About Us</h2>
+          <p class="lead">Welcome to Trend Blog, where we share stories, insights, and inspiration. Our mission is to create content that enriches your life and sparks your creativity.</p>
+          <p>We believe in the power of storytelling to connect people, inspire change, and foster understanding. Our team is passionate about crafting meaningful content that resonates with our audience.</p>
+        </div>
+        <div class="col-lg-6 d-flex align-items-center justify-content-center">
+          <img src="images/about2.jpg" alt="About Us Image" class="img-fluid rounded-circle animated" id="about-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team" class="py-5">
+    <div class="container">
+      <h2 class="display-4 text-center mb-5">Our Team</h2>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card text-center">
+            <img src="images/team2.jpg" alt="Team Member" class="card-img-top rounded">
+            <div class="card-body">
+              <h5 class="card-title">Merlin Doe</h5>
+              <p class="card-text">Founder & CEO<br>Merlin is the visionary leader behind Your Blog. With a passion for innovation and creativity, she guides the team towards achieving their goals.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card text-center">
+            <img src="images/team1.jpg" alt="Team Member" class="card-img-top rounded">
+            <div class="card-body">
+              <h5 class="card-title">Jane Smith</h5>
+              <p class="card-text">Content Writer<br>Jane is a talented writer who brings stories to life with her words. Her dedication to storytelling inspires and captivates our audience.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card text-center">
+            <img src="images/team3.jpeg" alt="Team Member" class="card-img-top ">
+            <div class="card-body">
+              <h5 class="card-title">Alex Johnson</h5>
+              <p class="card-text">Web Developer<br>Alex is the mastermind behind the technical aspects of Your Blog. With his expertise, he ensures a seamless user experience for our readers.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <p>&copy; 2024 Your Blog. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    // Internal JavaScript for animation
+    document.addEventListener("DOMContentLoaded", function() {
+      // Fade-in animation for the about image
+      var aboutImg = document.getElementById("about-img");
+      aboutImg.classList.add("fadeInLeft");
+    });
+  </script>
+</body>
+</html>

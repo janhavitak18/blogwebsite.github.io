@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <style>
+    /* Custom CSS */
+    body {
+      background-color: #acbabec7;
+      font-family: 'Arial', sans-serif;
+      color: #463d3d;
+    }
+    .navbar {
+      background-color: #00a2ff !important;
+    }
+    .navbar-brand {
+      color: #fff;
+      font-family: 'Verdana', sans-serif;
+    }
+    .navbar-nav .nav-link {
+      color: #fff !important;
+      font-family: 'Verdana', sans-serif;
+    }
+    .container {
+      margin-top: 50px;
+    }
+    .contact-form {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+    .contact-form h2 {
+      margin-bottom: 30px;
+      text-align: center;
+      color: #1a4b6b;
+      font-family: 'Arial', sans-serif;
+    }
+    .form-control {
+      border-color: #00c8ff;
+      font-family: 'Arial', sans-serif;
+    }
+    .form-control:focus {
+      border-color: #007acc;
+      box-shadow: 0 0 0 0.2rem rgba(204, 82, 0, 0.25);
+    }
+    .btn-primary {
+      background-color: #0084ff;
+      border-color: #008cff;
+      font-family: 'Arial', sans-serif;
+    }
+    .btn-primary:hover {
+      background-color: #0088cc;
+      border-color: #001bcc;
+    }
+    .social-links a {
+      font-size: 24px;
+      margin-right: 10px;
+      color: #0066ff;
+      transition: color 0.3s ease;
+    }
+    .social-links a:hover {
+      color: #4ec9f9;
+    }
+    .cta {
+      text-align: center;
+      margin-top: 20px;
+      color: #555;
+      font-family: 'Arial', sans-serif;
+    }
+    .cta a {
+      color: #006aff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .cta a:hover {
+      color: #008bcc;
+    }
+    .why-contact {
+      background-color: #ccefff;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+    .why-contact h3 {
+      color: #0077ff;
+      font-family: 'Verdana', sans-serif;
+      margin-bottom: 10px;
+    }
+    .why-contact p {
+      color: #333333;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-info">
+  <a class="navbar-brand" href="#">Trend <span>Blog</span></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact Us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <div class="contact-form">
+        <h2>Contact Us</h2>
+        <div class="why-contact">
+          <h3>Why Contact Us?</h3>
+          <p>We are here to help you! Whether you have a general inquiry, need product support, want to provide feedback, or have any other questions, we are ready to assist you.</p>
+          <p>Our team is dedicated to solving your problems and providing the best possible service to meet your needs.</p>
+        </div>
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="reason">Reason for Inquiry:</label>
+            <select class="form-control" id="reason" name="reason" required>
+              <option value="">Select One</option>
+              <option value="General Inquiry">General Inquiry</option>
+              <option value="Product Support">Product Support</option>
+              <option value="Feedback">Feedback</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <div class="cta">
+          <p>Prefer not to fill out the form? <a href="#">Explore our services</a> to learn more.</p>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <h4>Connect with Us</h4>
+        <div class="social-links">
+          <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+          <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+          <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+          <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS and Font Awesome -->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    const data = {};
+    formData.forEach((value, key) => {
+      data[key] = value;
+    });
+    console.log(data); // You can replace this with your form submission logic
+    document.getElementById("contactForm").reset(); // Reset the form fields
+    alert("Your message has been sent!"); // Show alert or use any other way to notify the user
+    // Redirect to thank you page after form submission
+    window.location.href = "http://127.0.0.1:5501/thankyou.html";
+  });
+</script>
+
+</body>
+</html>
